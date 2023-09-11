@@ -10,8 +10,8 @@ const Nav = () => {
           <img src={headerLogo} alt="logo" width={130} height={29} />
         </a>
         <ul className=" flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          {navLinks.map((item) => (
-            <li key={item.label}>
+          {navLinks.map((item, i) => (
+            <li key={i}>
               <a
                 href={item.href}
                 className="font-monts errat leading-normal
